@@ -1,0 +1,16 @@
+Q2. Updating Elements
+
+Complete the code snippet with possible statements from options so that the expected output is obtained.
+
+sets = {3, 4, 5} 
+___________
+print(sets)
+Expected Output: {1, 2, 3, 4, 5}
+
+i) sets.update([1, 2, 3])
+ii) sets.add([1, 2 ,3])
+iii) sets += [1, 2 ,3]
+iv) sets += {1, 2, 3}
+v) sets = sets.union({1, 2, 3})
+
+Solution: i, v

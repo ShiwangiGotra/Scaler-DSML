@@ -1,0 +1,14 @@
+Q5. Length of Sets
+
+What is the output of the following program?
+
+set1 = {1, 2, 4}
+set2 = {4, 5, 6}
+print(len(set1 + set2))
+
+i) 3
+ii)5
+iii)4
+iv) error
+
+ans: error

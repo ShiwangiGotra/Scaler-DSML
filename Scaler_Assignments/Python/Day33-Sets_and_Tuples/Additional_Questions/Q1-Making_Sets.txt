@@ -1,0 +1,16 @@
+Q1. Making Sets
+
+Which of the options defines a set s consisting of strings 'Scaler', 'Academy', 'is', and 'Awesome'?
+
+s = set(['Scaler', 'Academy', 'is', 'Awesome'])
+s = set('Scaler', 'Academy', 'is', 'Awesome')
+s = set('Scaler Academy is Awesome')
+s ={'Scaler', 'Academy', 'is', 'Awesome'}
+
+solution:
+
+s = set(['Scaler', 'Academy', 'is', 'Awesome'])
+s ={'Scaler', 'Academy', 'is', 'Awesome'}
+
+
+

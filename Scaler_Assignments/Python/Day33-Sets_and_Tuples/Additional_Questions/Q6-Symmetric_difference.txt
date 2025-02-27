@@ -1,0 +1,31 @@
+Problem Description
+
+Write a program that returns the symmetric difference of two sets, without actually using the symmetric difference operator.
+Input Format
+
+The first line indicates the number of test cases. There will be two lines of inputs for each testcase as following:
+The two lines consist of space-separated integers representing the elements of set1 then set2
+Output Format
+
+Return the required set.
+Example Input
+
+1
+10 20 30 40
+30 40 50 60
+Example Output
+
+{10, 20, 50 ,60}
+Example Explanation
+
+{10 20 30 40} - {30 40 50 60} = {10, 20, 50 ,60}
+
+Solution:
+
+def symm_diff(set1, set2 ):
+    ''' input:set1,set2-two sets
+        output:return symmetric difference set
+    '''
+    
+    # YOUR CODE GOES HERE
+    return ((set1.union(set2))-(set1.intersection(set2)))
