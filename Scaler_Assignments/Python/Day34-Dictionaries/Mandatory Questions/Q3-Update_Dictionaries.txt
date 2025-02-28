@@ -1,0 +1,14 @@
+Q3. Update Dictionaries
+
+What will be the output of the following Python code snippet?
+
+bbt = {'Sheldon': 1, 'Leonard': 2}
+bbt.update({'Penny': 2})
+print(bbt)
+
+i) {“Sheldon”: 1, “Leonard”: 2}
+ii) {“Sheldon”: 1, “Penny”: 2}
+iii) {“Sheldon”: 1, “Leonard”: 2, “Penny”: 2}
+iv) Error
+
+Solution: iii

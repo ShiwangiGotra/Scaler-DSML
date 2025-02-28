@@ -1,0 +1,22 @@
+Q5. Members of a Dictionary
+
+What will be the output of the following Python code?
+
+dict1 = {'age': 35, 'name': 'abc', 'salary': 45000}
+
+val = dict1['age']
+
+if val in dict1:
+    print('This is a member of the dictionary')
+else:
+    print('This is not a member of the dictionary')
+
+i) This is a member of the dictionary
+
+ii) This is not a member of the dictionary
+
+iii) None
+
+iv) Error
+
+Solution: ii
