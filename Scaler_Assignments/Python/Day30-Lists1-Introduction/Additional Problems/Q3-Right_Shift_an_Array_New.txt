@@ -1,0 +1,57 @@
+Q3. Right Shift an Array New
+
+Problem Description
+
+Write a program that reads an integer array A from input and modifies the array by shifting each element to the right by one position and by shifting the last element to the first position. Return the modified array.
+
+Problem Constraints
+
+1 <= N <= 105
+1 <= A[i] <= 109
+Input Format
+
+The first line of the input is the size of the array N.
+The next N lines of the input is integer of the array.
+Example Input
+
+5
+1 
+2 
+3 
+4 
+5
+Example Output
+
+[5, 1, 2, 3, 4]
+Explanation
+
+The elements 1, 2, 3 and 4 have been shifted to the right by one position and 5 has been moved to the first position.
+
+Solution:
+
+# def shift():
+#     N = int(input())  # Number of elements
+#     A = list()  
+#     for i in range(N):
+#         elem = int(input())
+#         A.append(elem)
+    
+#     if A:
+#         last = A.pop()
+#         A.insert(0,last)
+
+#     return A
+
+
+def shift():
+  ls = list()
+  N = int(input())
+  for i in range(N):
+    elem = int(input())
+    ls.append(elem)
+
+  if ls:
+    last_elem = ls.pop()    
+    new_ls = [last_elem] + ls
+  return new_ls
+

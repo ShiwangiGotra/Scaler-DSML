@@ -1,0 +1,97 @@
+Q2. Replace Character
+
+Problem Description
+
+You are given a character string A and two integer ASCII codes B and C.
+
+You have to find and replace all the occurrences of the character having ASCII code equal to B with character having ASCII code equal to C and return the resultant string.
+
+                                                image
+
+
+Problem Constraints
+
+1 <= N <= 105
+
+A[i] ∈ ['a'-'z']
+
+97 <= B, C <= 122
+
+
+
+Input Format
+
+First argument is a character string A.
+
+Second argument is an integer B.
+
+Third argument is an integer C.
+
+
+
+Output Format
+
+Return the resultant string after replacing the character(s).
+
+
+
+Example Input
+
+Input 1:
+
+ A = "aabbccbb"
+ B = 98 
+ C = 100
+Input 2:
+
+ A = "abc"
+ B = 100
+ C = 97
+
+
+Example Output
+
+Output 1:
+
+ aaddccdd 
+Output 2:
+
+ abc 
+
+
+Example Explanation
+
+Explanation 1:
+
+ Character having ASCII code equal to 98 = 'b' 
+ Character having ASCII code equal to 100 = 'd'
+ Character 'b' occurs at positions 3, 4, 7 and 8 in "aabbaabb".
+ After replacing the characters, string becomes "aaddaadd".
+Explanation 2:
+
+ Character having ASCII code equal to 100 = 'd'
+ Character 'd' is not present in "abc".
+ The resultant string is same as string A.
+
+
+Expected Output
+Provide sample input and click run to see the correct output for the provided input. Use this to improve your problem understanding and test edge cases
+Arg 1: A single String, For e.g 'anagram'
+Enter Input Here
+Arg 2: A single Integer, For e.g 9
+Enter Input Here
+Arg 3: A single Integer, For e.g 9
+Enter Input Here
+
+Solution:
+
+class Solution:
+    # @param A : string
+    # @param B : integer
+    # @param C : integer
+    # @return a strings
+    def solve(self, A, B, C):
+        old_char = chr(B)  
+        new_char = chr(C) 
+
+        return A.replace(old_char, new_char)

@@ -1,0 +1,27 @@
+Q3. Consecutive Duplicate
+
+Problem Description
+
+Write a function to check if the given array A has consecutive duplicate elements or not.
+Return True if there are consecutive duplicate elements in the list else return False.
+
+Here by consecutive duplicates, we mean duplicates that are present at consecutive indices in the array
+
+
+Problem Constraints
+
+1 <= N <= 105
+1 <= A[i] <= 109
+
+
+Input Format
+
+An integer array A as the function argument.
+
+Solution:
+
+def duplicate(ls,n):
+    for i in range(n-1):
+        if ls[i] == ls[i+1]:
+            return True
+    return False

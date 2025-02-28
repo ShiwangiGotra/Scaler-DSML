@@ -1,0 +1,19 @@
+Q2. Go Global!
+
+What does the following code print?
+
+x = 55
+def hi():
+  return x
+x +=10
+print(hi())
+
+i) 55
+
+ii) 65
+
+iii) 10
+
+iv) Error
+
+Solution: ii

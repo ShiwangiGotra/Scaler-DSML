@@ -1,0 +1,67 @@
+Q4. Reverse the word 
+
+Problem Description
+
+You are given lowercase string (A) and you have to return after reversing that.
+
+
+Problem Constraints
+
+1 <= S.size() <= 1000
+
+
+Input Format
+
+First and only argument containing a lowercase string S.
+
+
+
+Output Format
+
+You have to return string which is reverse form of input string.
+
+
+
+Example Input
+
+Input 1:
+
+interviewbit
+Input 2:
+
+scaler
+
+
+Example Output
+
+Output 1:
+
+tibweivretni
+Output 2:
+
+relacs
+
+
+Example Explanation
+
+Explanation 1:
+
+Clearly, reverse of interviewbit is tibweivretni.
+Explanation 2:
+
+Clearly, reverse of scaler is relacs.
+
+
+
+Expected Output
+Provide sample input and click run to see the correct output for the provided input. Use this to improve your problem understanding and test edge cases
+Arg 1: A single String, For e.g 'anagram'
+Enter Input Here
+
+Solution:
+
+class Solution:
+    # @param A : string
+    # @return a strings
+    def solve(self, A):
+        return A[::-1]

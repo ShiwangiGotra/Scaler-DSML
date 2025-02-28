@@ -1,0 +1,13 @@
+Q3. 'Hello' Strings
+
+Which options will raise error if s = "hello"?
+
+i) print(s[0:9])
+
+ii) s[2] = ‘a’
+
+iii) print( s[9] )
+
+iv) print( s[: : -1] )
+
+Solution: ii, iii

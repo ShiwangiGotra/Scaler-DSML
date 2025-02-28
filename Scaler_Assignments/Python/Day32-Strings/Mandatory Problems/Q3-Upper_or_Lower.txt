@@ -1,0 +1,29 @@
+Q3. Upper or Lower
+
+What will be the value of converted_word, if the following operations in the following code snippet are executed?
+
+word = "Scaler Academy"
+n = len(word)
+word1 = word.upper()
+word2 = word.lower()
+
+converted_word = ""
+
+for i in range(n):
+     if i % 2 == 0:
+          converted_word += word2[i]
+     else:
+          converted_word += word1[i]
+
+i) Scaler Academy
+
+ii) ScAlEr aCaDeMy
+
+iii) ScAlEr AcAdEmY
+
+iv) sCaLeR AcAdEmY
+
+v) sCaLeR academy
+
+Solution: iv
+

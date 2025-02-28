@@ -1,0 +1,13 @@
+Q5. Aliases of String
+
+If a = “Random String”, then which of the following variables has the same string value?
+
+i) b = a
+
+ii) c = str(a)
+
+iii) d = a[:]
+
+iv) e = “Rand” + “” + “om Str” + “” + “ing”
+
+Solution: i, ii, iii, iv

@@ -1,0 +1,16 @@
+Q1. Brown Fox
+
+Select the correct output of the following code:
+
+str1 = "quick brown fox word!"
+print(str1[12:15], str1[:5], str1[-5:-1], str1[8:110], str1[-4:])
+
+i) fox quick word own fox word! ord!
+
+ii) fox word quick own word! fox ord!
+
+iii) fox quick word owquick own ord!
+
+iv) foxquickword!ownord!
+
+Solution: i

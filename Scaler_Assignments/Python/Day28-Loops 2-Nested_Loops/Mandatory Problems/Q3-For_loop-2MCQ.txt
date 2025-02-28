@@ -1,0 +1,13 @@
+Q3. For loop-2 MCQ E
+
+A Highest Common Factor (HCF) of a,b is defined as _______.
+
+i) It is the smallest integer divisible by both a and b
+
+ii) It is the greatest integer divisor of both a and b
+
+iii) It is the sum of the number a and b
+
+iv) None of the above
+
+Solution: ii

@@ -1,0 +1,56 @@
+Q2. Road tax
+
+Problem Description:
+
+Write a program that takes the cost price of a vehicle as an argument and returns the road tax, that the vehicle owner has to pay according to the following criteria:
+
+(image address)
+https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/003/481/original/cost_price.PNG?1650617485
+
+Note1: Return the tax up to one decimal place. You can use round(tax,1)
+
+Note2: You need not take input in this problem, you need to only implement the function provided.
+
+Input Format:
+
+The first line indicates the number of test cases. For each testcase there will be a single line of input representing the cost price.
+Output Format:
+
+Return tax in float format.
+Sample Input 1:
+
+1
+25000
+Sample Output 2:
+
+1250.0
+Sample Explanation 1
+
+The given cost price of vehicle is 25000 which is less than 50,000. 
+Hence the tax applicable is 5%. So if we calculate 5% of 25,000, it evaluates to 1250.0.
+Sample Input 2:
+
+1
+60000
+Sample Output 2:
+
+6000.0
+Sample Explanation 2
+
+The given cost price of vehicle is 60,000 which is greater than 50,000 but less than 75,000. 
+Hence the tax applicable is 10%. So if we calculate 10% of 60,000, it evaluates to 6000.0.
+
+Solution:
+
+def road_tax(price):
+    tax = None
+    # YOUR CODE GOES HERE
+    if price <= 50000:
+        tax = (5 * price)/100
+    elif price > 50000 and price <= 75000:
+        tax = (10 * price)/100
+    elif price > 75000 and price <= 100000:
+        tax = (15 * price)/100
+    else:
+        tax = (20 * price)/100
+    return tax
