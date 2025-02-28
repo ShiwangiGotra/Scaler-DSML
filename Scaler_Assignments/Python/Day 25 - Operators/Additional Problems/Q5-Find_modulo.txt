@@ -1,0 +1,28 @@
+Q5. Find modulo
+
+Problem Description
+
+Write a program that takes input 2 integers A and B, and returns A%B.
+Input Format
+
+First line takes input of integer A
+Second line takes input of integer B
+Output Format
+
+Return the required value
+Example Input
+
+10
+3
+Example Output
+
+1
+Example Explanation
+
+10 % 3 = 1. When we divide 10 by 3, the remainder is 1.
+
+Solution:
+
+A = int(input())
+B = int(input())
+print(A % B)

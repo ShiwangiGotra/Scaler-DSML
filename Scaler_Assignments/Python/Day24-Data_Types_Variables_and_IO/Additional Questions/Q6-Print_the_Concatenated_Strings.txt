@@ -1,0 +1,32 @@
+Q6. Print the Concatenated Strings
+
+Problem Description
+
+Take two strings "str1" and "str2" as input. Then your task is to concatenate the two strings and print the resultant 
+concatenated string.
+Input Format
+
+Two strings namely, str1 and str2
+Output Format
+
+str1 and str2 joined together
+Sample Input - 1
+
+str1 = Hello
+str2 = World
+Sample Output - 1
+
+HelloWorld
+Sample Input - 2
+
+str1 = Scaler
+str2 = Academy
+Sample Output - 2
+
+ScalerAcademy
+
+Solution:
+
+str1 = input()
+str2 = input()
+print(str1+str2)

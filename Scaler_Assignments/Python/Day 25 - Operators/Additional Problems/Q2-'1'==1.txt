@@ -1,0 +1,11 @@
+Q2. '1' == 1
+
+What is the result of the following expression in Python?
+
+print("1" == 1)
+
+i) True
+ii) False
+iii) Error
+
+Solution: ii) False

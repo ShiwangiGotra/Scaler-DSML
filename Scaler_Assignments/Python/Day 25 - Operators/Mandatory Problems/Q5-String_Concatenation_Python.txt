@@ -1,0 +1,12 @@
+Q5. String Concatenation Python
+
+What is the result of the following expression in Python?
+
+print("54" + "23")
+
+i) 77
+ii) 5423
+iii) 54
+iv) 23
+
+Solution: ii) 5423

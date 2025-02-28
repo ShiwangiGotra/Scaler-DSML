@@ -1,0 +1,12 @@
+Q5. Explicit conversion
+
+What will be the output of the following piece of code?
+
+a = "13.56"
+print(float(a))
+
+i) 14
+ii) 13.56
+iii) Error
+
+Solution: 13.56

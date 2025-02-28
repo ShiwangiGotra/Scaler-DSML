@@ -1,0 +1,20 @@
+Q3. If-Else-Output
+
+What will be the output of the following code:
+
+x = 2
+if x==2:
+    x = 3
+x = 4
+else:
+    x = 5
+print(x)
+
+i) 3
+ii) 4
+iii) 5
+iv) Error
+
+Solution:
+
+iv) Error

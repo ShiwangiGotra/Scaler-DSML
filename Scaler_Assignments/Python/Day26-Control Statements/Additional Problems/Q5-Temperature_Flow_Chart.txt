@@ -1,0 +1,18 @@
+Q5. Temperature Flow Chart
+
+The following flowchart is given. What would be the output if Temp=19?
+
+FLOW CHART
+
+if( temp <= 32):
+      print('Below Freezing')
+else:
+      print('Above freezing')
+
+i) Above Freezing
+ii) Below Freezing
+iii) No output
+iv) Error
+
+Solution: ii
+

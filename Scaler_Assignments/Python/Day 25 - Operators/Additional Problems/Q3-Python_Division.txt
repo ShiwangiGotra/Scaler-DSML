@@ -1,0 +1,13 @@
+Q3. Python Division
+
+What is the output for the following statements?
+
+x = 55 / 11
+print(x)
+
+i) 5
+ii) 6.0
+iii) 5.0
+
+Solution: iii) 5.0
+
