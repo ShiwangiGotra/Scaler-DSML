@@ -1,0 +1,38 @@
+Q3. List to dict
+
+You are given a function that takes two lists as input named keys and values respectfully. Return the dictionary such that ith index element of key list have the corresponding ith index element of values list as value.
+
+Note: Lengths of lists maybe different, in that case ignore the extra elements in any list.
+
+Input Format
+
+list[int]
+list[int]
+Output Format
+
+dict
+Input Sample 1
+
+[1,2,3]
+[4,5,6]
+Output Sample 1
+
+{1: 4, 2: 5, 3: 6}
+Input Sample 2
+
+[10,9,8,7,6]
+[3,2,1,0]
+Output Sample 2
+
+{10: 3, 9: 2, 8: 1, 7: 0}
+
+Solution:
+
+def list_to_dict(keys, values):
+    result = {}
+    min_length = min(len(keys), len(values))  # Find the shorter list length
+
+    for i in range(min_length):  # Iterate only up to the shorter list
+        result[keys[i]] = values[i]
+
+    return result

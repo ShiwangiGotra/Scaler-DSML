@@ -1,0 +1,27 @@
+Q3. How Many Are Factors
+
+Given an array A and an integer B, find the number of values in A which fully divide B.
+
+Return the count of such numbers in A.
+
+Sample Input-
+
+A = [1,2,5,6,4,3]
+B = 560
+Sample Output-
+
+4
+Explanation-
+
+The values 1,2,5 and 4 divide 560 fully. So 4 is returned.
+
+Solution:
+
+def divides(A, B):
+    # Your Code Goes Here
+    count = 0
+    for i in A:
+        if B % i == 0:
+            count += 1
+    
+    return count

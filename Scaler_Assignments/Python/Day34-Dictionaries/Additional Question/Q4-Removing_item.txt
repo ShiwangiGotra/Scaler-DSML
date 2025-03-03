@@ -1,0 +1,15 @@
+Q4. Removing item
+
+Consider the dictionary: prices = {'apple': 1.50, 'banana': 0.75, 'orange': 1.25}.
+
+Which method(s) would you use to remove the banana key-value pair? Choose all that are correct.
+
+a) prices.remove('banana')
+
+b) del prices['banana']
+
+c) prices.clear('banana')
+
+d) prices.pop('banana')
+
+Solution: b, d

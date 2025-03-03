@@ -1,0 +1,41 @@
+Q6. Merge Two Dictionaries
+
+You are given two dictionaries A and B. Write the code to merge the dictionaries. In case they have common keys, the larger value should be chosen.
+
+Return the merged dictionary.
+
+Hint - .get(key, value) method of dictionary returns value if key doesn't exist in dictionary.
+
+For example - .get(key, -105) will give -105 if the key doesn't exist in the dictionary.
+
+Look at the constraints given below to choose the right 'value' in .get() if required.
+
+Constraints-
+
+-105 < A[key] < 105
+
+-105 < B[key] < 105
+
+Sample Input-
+
+A = {'t1' : 5, 't2' : 10, 't3' : 15}
+B = {'t3' : 12, 't4' : 20}
+Sample Output-
+
+{'t2': 10, 't1': 5, 't4': 20, 't3': 15}
+
+Solution:
+
+def merge(A, B):
+    # Your Code Goes Here
+    C = {}
+    for key in A:
+        C[key] = A[key]
+
+    for key in B:
+        if key in C:
+            C[key] = max(C[key],B[key])
+        else:
+            C[key] = B[key]
+
+    return C

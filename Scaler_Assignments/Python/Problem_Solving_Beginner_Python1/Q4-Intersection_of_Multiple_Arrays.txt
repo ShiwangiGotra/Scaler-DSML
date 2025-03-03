@@ -1,0 +1,25 @@
+Q4. Intersection of Multiple Arrays
+
+You are given multiple arrays. Write the code to find their intersection.
+
+The arrays are stored in a list all_arrays. Return the answer in the form of a set.
+
+
+Sample Input-
+
+all_arrays = [[1,2, 4, 6], [2, 4, 7, 8], [9, 6, 4, 2]]
+Sample Output-
+
+{2, 4}
+Sample Explanation-
+
+2 and 4 are present in all the arrays. So a set containing 2 and 4 is returned.
+
+Solution:
+
+def findIntersection(all_arrays):
+    # Your Code Goes Here
+    a =set(all_arrays[0])
+    for i in all_arrays[1:]:
+        a = a.intersection(set(i))
+    return a

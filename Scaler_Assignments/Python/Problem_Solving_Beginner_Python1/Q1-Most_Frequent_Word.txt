@@ -1,0 +1,39 @@
+Q1. Most Frequent Word
+
+Given a string, find the word which occurs the most number of times.
+
+Return the most frequent word.
+
+Sample Input-
+
+'apple banana mango apple banana apple apple banana mango'
+Sample Output-
+
+apple
+Explanation-
+
+In the given string, the frequencies for different words are-
+
+apple - 4
+
+banana - 3
+
+mango - 2
+
+So the most frequent word is 'apple'.
+
+Solution:
+
+def mostFrequent(s):
+    # Your Code Goes Here
+    ls = s.split()
+    dict = {}
+    for i in ls:
+        # print(f'{i} : {ls.count(i)}')
+        dict.update({i : ls.count(i)})
+        
+    highest = 0
+    for i,j in dict.items():
+        if j > highest:
+            highest = j
+    return i

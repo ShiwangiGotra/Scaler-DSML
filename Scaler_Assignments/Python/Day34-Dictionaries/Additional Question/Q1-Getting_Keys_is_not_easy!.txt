@@ -1,0 +1,15 @@
+Q1. Getting Keys is not easy!
+
+Consider the following dictionary:
+
+dict = {5: 'a', 10: 'b', 15: 'c'}
+Below are two statements with the corresponding output written just on the right of them. Which option represents the correct booleans about the correctness of code and output pairings?
+
+https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/003/578/original/Untitled.png?1651126534
+
+a) 1. True, 2. True
+b) 1. False 2. False
+c) 1. True 2. False
+d) 1. False 2. True
+
+Solution: c

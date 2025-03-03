@@ -1,0 +1,26 @@
+Q2. Remove Number In Place
+
+Given a list of numbers arr and a value val, remove all the instances of that value in the array/list. Do this in-place i.e. don't create a new array but remove all instances of the value from the original array itself.
+
+Return the array arr.
+
+Sample Input-
+
+arr = [1, 2, 5, 2, 3, 4, 1, 2, 3, 5]
+val = 3
+Sample Output-
+
+[1, 2, 5, 2, 4, 1, 2, 5]
+Explanation-
+
+All instances of 3 has been removed from the given array.
+
+Solution:
+
+def removeAll(arr, val):
+    # Your Code Goes Here
+    for i in arr:
+        if i == val:
+            arr.remove(i)
+    
+    return arr

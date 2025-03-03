@@ -1,0 +1,38 @@
+Q5. Least frequent from back
+
+You are given a string of characters, these characters can be anything from alphabets to symbols. Your task is to complete the given function so that it returns the last character that repeated the least times in string. If no such character is present then it should return None
+
+Input Format
+
+string: str
+Output Format
+
+str
+Input Sample
+
+aaaadfhgajshfdmmmssssmmm
+Output Sample
+
+j
+
+Solution:
+
+def count_char(st):
+    if not st:
+        return None  # Handle empty string case
+
+    # Step 1: Count character frequencies manually
+    char_count = {}
+    for char in st:
+        char_count[char] = char_count.get(char, 0) + 1
+
+    # Step 2: Find the minimum frequency
+    min_freq = min(char_count.values())
+
+    # Step 3: Iterate from the end to find the last character with min frequency
+    for char in reversed(st):
+        if char_count[char] == min_freq:
+            return char
+
+    return None  # If no character meets the criteria (edge case)
+
