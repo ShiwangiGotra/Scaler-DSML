@@ -1,0 +1,21 @@
+Q4. Decorate or not
+
+What will be the output of the following piece of code?
+
+def decorate(function):
+    def wrapper(a, b):
+        return function(a, b) * 10
+    return wrapper
+
+@decorate
+def func(a, b):
+    return a + b
+
+print(func(1, 2))
+
+i) 3
+ii) 30
+iii) 10
+iv) Error
+
+Solution: ii

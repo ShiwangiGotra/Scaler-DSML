@@ -1,0 +1,17 @@
+Q1. What of What
+
+What will be the output of the following code?
+
+def func1(x):
+    return lambda a, b: x * a + b
+
+
+function = func1(5)
+print(function(3, 2))
+
+i) 15
+ii) 17
+iii) 50
+iv) 20
+
+Solution: ii

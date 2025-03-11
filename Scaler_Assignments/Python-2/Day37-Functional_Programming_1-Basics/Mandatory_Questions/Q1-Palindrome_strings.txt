@@ -1,0 +1,15 @@
+Q1. Palindrome strings
+
+Fill in the blank space to get palindromic strings present in the list using the lambda function:
+
+Note: A palindrome is any string that reads the same forward and backward (e.g., "racecar" or "aaa").
+
+arr = ["php", "w3r", "python", "aaa", "java"]
+result  = _________
+
+i) list( filter( lambda x: (x =="".join( reversed(x))), arr))
+ii) list( filter( lambda x: (Counter(str) == Counter(x)), arr)
+iii) list(filter(lambda x: x in arr, str))
+iv) None of these
+
+Solution: i

@@ -1,0 +1,22 @@
+Q3. lambda in python
+
+What will be the output of the following code snippet:
+
+def func2(c, d):
+    return c, d
+
+def func1(a, b):
+    c = a**1
+    d = b**2
+    return lambda: func2(c,d)
+
+result = func1(1, 2)
+
+print(result())
+
+i) (1,2)
+ii) (1,4)
+iii) 2,4)
+iv) None of these
+
+Solution: ii

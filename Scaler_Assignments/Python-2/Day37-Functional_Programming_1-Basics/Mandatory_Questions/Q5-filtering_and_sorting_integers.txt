@@ -1,0 +1,49 @@
+Q5. filtering and sorting integers
+
+Problem Description
+Write a Python function that takes a single string consisting of numbers separated by spaces. The function should:
+
+Split the string into a list of numbers.
+Convert each number into an integer.
+Use the filter function along with a lambda to remove all numbers that are below a certain threshold (remove numbers less than zero).
+Use the sorted function with a lambda as the key to sort the remaining numbers in ascending order.
+Return (or print) the final list of numbers.
+Input Format
+A single line of input, which is a string containing integers separated by spaces.
+For example:
+
+"10 -5 3 0 15 -2 7"
+Output Format
+A list of integers that meet the threshold requirement, sorted in ascending order.
+For example:
+
+[0, 3, 7, 10, 15]
+
+Solution:
+
+def filter_and_sort_numbers(numbers_string):
+    """
+    This function takes a string of numbers separated by spaces, 
+    converts them to integers, filters out negative numbers, 
+    and returns the sorted list of remaining numbers.
+    """
+    # 1. Split the string into a list of numeric strings
+    str_lst = numbers_string.split()
+    new_ls = []
+    
+    # 2. Convert each string to an integer
+    for i in str_lst:
+        new_ls.append(int(i))   
+    pos_lst = [] 
+        
+    # 3. Filter out negative numbers
+    for i in new_ls:
+        if i >= 0:
+            pos_lst.append(i)
+    
+    
+    # 4. Sort the numbers in ascending order
+    pos_lst.sort()
+    
+    # 5. Return the final list
+    return pos_lst

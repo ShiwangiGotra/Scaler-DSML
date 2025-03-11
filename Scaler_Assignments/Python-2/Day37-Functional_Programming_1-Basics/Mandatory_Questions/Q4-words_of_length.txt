@@ -1,0 +1,32 @@
+Q4. words of length
+
+Problem Description
+
+Write a Python function that takes a string and a length value as input arguments and returns the words from the string whose length is equal to the provided input length value.
+In other words, you will split the string into individual words and then gather only those words that match the specific length given.
+
+
+Input Format
+
+The string
+Value of the length of word
+
+
+Output Format
+
+A list of strings containing the words having length equal to the value provided in input.
+
+Solution:
+
+def LengthSequence(string, length):
+    '''string => a string
+       length => an integer representing required length of words which are be returned'''
+    result= []
+    # YOUR CODE GOES HERE
+    str_lst = string.split()
+    for i in str_lst:
+        if len(i) == length:
+            result.append(i)
+    
+
+    return result

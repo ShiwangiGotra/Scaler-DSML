@@ -1,0 +1,21 @@
+Q5. Split the string
+
+Given the following code snippet, what will be the output?
+
+sentence = "Python is fun to learn"
+words = sentence.split()
+new_list = []
+for word in words:
+    if len(word) > 3:
+        new_list.append(word.upper())
+print(new_list)
+
+i) ['Python', 'learn']
+
+ii) ['python', 'learn']
+
+iii) ['PYTHON', 'LEARN']
+
+iv) ['FUN', 'LEARN']
+
+Solution: iii

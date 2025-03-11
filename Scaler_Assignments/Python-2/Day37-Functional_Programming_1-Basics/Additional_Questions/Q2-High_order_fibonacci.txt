@@ -1,0 +1,33 @@
+Q2. High order fibonacci
+
+You are given a number n as input, write a higher order function function that returns another function which on execution returns the first n numbers of fibonacci sequence.
+
+Input Format
+
+n: int
+Output Format
+
+List[int]
+Input Sample
+
+10
+Output Sample
+
+[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+Solution:
+
+def function(n):
+    # write your code here
+    def print_fibo():
+        ls =[]
+        if n:
+            a = 0
+            b = 1            
+            ls.append(a)
+            for i in range(n-1):
+                ls.append(b)            
+                a,b = b,a+b
+        
+        return ls
+    return print_fibo
