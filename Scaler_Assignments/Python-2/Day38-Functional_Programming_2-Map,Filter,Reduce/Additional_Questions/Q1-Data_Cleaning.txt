@@ -1,0 +1,58 @@
+Q1. Data Cleaning
+
+Problem Description
+
+You are given multiple lines of sensor readings, each line containing space-separated values that may be valid integers or invalid entries such as 'None' or other non-numeric strings. Your task is to:
+
+Filter out invalid readings (e.g., 'None' or strings that cannot be converted to integers).
+Map the remaining valid readings to integers.
+Reduce them to a sum for each line.
+Finally, return a list of sums—one sum for each line of valid readings.
+
+Note: If a line has no valid readings, its sum should be 0.
+
+Input Format
+
+The first line contains an integer ( N ), the number of lines of sensor readings.
+The next ( N ) lines each contain space-separated sensor readings (strings).
+Output Format
+
+A list of integer sums, one for each line.
+Example Input
+
+3
+2 None 4
+10 20 None
+5 6 7
+Example Output
+
+[6, 30, 18]
+
+Solution:
+
+from functools import reduce
+
+def process_sensor_readings(N, sensor_lines):
+    """
+    N: Number of lines to process
+    sensor_lines: List of strings, where each string contains space-separated sensor readings
+                  (some of which may be invalid, e.g., 'None', 'abc', etc.).
+    
+    Returns: A list of integer sums, one for each line of valid readings.
+    """
+    
+    result_sums = []
+    
+    for i in range(N):
+        # Split the current line into tokens
+        result_sums.append(sensor_lines[i].split())
+        
+        # 1. Filter out invalid entries (keep only numeric tokens)
+        result_sums[i] = list(filter(lambda x : x.isdigit(),result_sums[i]))
+        # 2. Map valid tokens to integers
+        result_sums[i] = list(map(int,result_sums[i]))
+        # 3. Reduce integers to their sum, starting from 0 for an empty list
+        result_sums[i] = reduce(lambda a,b : a+b,result_sums[i] )
+
+    
+    return result_sums

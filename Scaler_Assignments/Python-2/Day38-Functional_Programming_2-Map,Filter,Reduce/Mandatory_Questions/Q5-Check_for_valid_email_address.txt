@@ -1,0 +1,65 @@
+Q5. Check for valid email address
+
+Problem Description
+
+Given a list of email addresses, return a list containing only valid email addresses in lexicographical order. A Valid email address must follow the following rules:
+It is of the form user@domain.com, user or domain can't be empty
+It must have a single @ in the address.
+The maximum length of the name before @ should be 20.
+
+
+Input Format
+
+Space separated strings representing the email addresses
+
+
+Output Format
+
+List of valid email addresses sorted in lexicographical order
+
+
+Example Input
+
+sara@scaler.com brian-23@scaler.com brute_54@scaler.com
+
+
+Example Output
+
+['brian-23@scaler.com', 'brute_54@scaler.com', 'sara@scaler.com']
+
+
+Example Explanation
+
+All the elements in the input list are valid as per the conditions and are returned in lexicographical order.
+
+Solution:
+
+def verify(s):
+    freq_attherate = s.count('@')
+    
+    if freq_attherate == 1:
+        user,domain = s.split('@')
+        if len(user) > 20 or len(user) == 0:
+            return False
+        elif len(domain) == 0:
+            return False
+        else:
+            return True
+    
+
+def check(emails):
+    '''
+    input:
+    emails -> list of emails to check
+    
+    output:
+    verified_lex -> the verified list of emails, in lexicographical order
+    '''
+    
+    verified_lex = None
+    
+    # Your code starts here
+    verified_lex = list(filter(verify,emails))
+    verified_lex.sort()
+    # Your code ends here
+    return verified_lex

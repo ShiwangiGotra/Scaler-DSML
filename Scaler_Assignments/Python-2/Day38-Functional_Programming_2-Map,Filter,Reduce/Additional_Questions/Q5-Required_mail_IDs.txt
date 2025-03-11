@@ -1,0 +1,19 @@
+Q5. Required mail IDs
+
+Given a list containing email ids, help Sam in retrieving all the emails which have "SAM" or "sam" in their names.
+
+ids = ["SAM@gmail.com", "Ram@gmail.com", "sam@gmail.com", "samJohnson@iit.com", "SAM@harvard.com"]
+name = "sam"
+result = list(filter(lambda x : ??? , ids))
+print(result)
+Complete the code snippet given above to return all the email ids in the list that have either the uppercase or lowercase name as a substring. Choose the correct option which can be used to fill the blank (???) to get the required output.
+
+i) name in x.lower()
+
+ii) (name.lower() or name.upper()) in x
+
+iii) name.lower() in x and name.upper() in x
+
+iv) (name.lower() and name.upper()) in x
+
+Solution: i

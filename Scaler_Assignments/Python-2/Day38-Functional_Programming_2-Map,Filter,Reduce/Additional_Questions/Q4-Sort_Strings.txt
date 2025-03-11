@@ -1,0 +1,43 @@
+Q4. Sort Strings
+
+Problem Description
+Given a list of strings of varying lengths, complete the python function to sort the list of strings based on their lengths and return the sorted list.
+
+Note: In case 2 strings have the same length, they are sorted in ascending order of their lexicographic index.
+
+Input Format
+
+List of Strings
+
+
+Output Format
+
+Sorted list of strings based on length
+
+
+Example Input
+
+cccc b dd aaa
+
+
+Example Output
+
+['b', 'dd', 'aaa', 'cccc']
+
+Solution:
+
+def sort_strings(str_list):
+	#str_list-> list of strings
+	
+	# return the sorted list of strings on the basis of criteria mentioned
+	
+	# code starts here
+	res = None     
+    
+    for i in range(len(str_list)):
+        
+        res = sorted(str_list, key=lambda x: (len(x), x))
+    
+	#code ends here
+	
+	return res

@@ -1,0 +1,19 @@
+Q3. filter elemets
+
+Using filter to select certain elements
+
+Scenario: You have a list of integers, and you want to extract only the odd numbers using the filter function in Python.
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+Which of the following filter expressions correctly selects only the odd numbers?
+
+i) list(filter(lambda x: x % 2 == 0, numbers))
+
+ii) list(filter(lambda x: x % 2, numbers))
+
+iii) list(filter(lambda x: x % 2 == 1, numbers))
+
+iv) list(filter(lambda x: x > 0, numbers))
+
+Solution: iii

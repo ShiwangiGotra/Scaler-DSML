@@ -1,0 +1,70 @@
+Q4. Map, reduce and filter
+
+Problem Description
+
+In this exercise, complete the function func, which takes integers, names, and numbers as the parameters.
+
+a. Use map() to return the list of the squares of each number.
+
+b. Use filter() to return the list with only those names that have less than or equal to seven letters.
+
+c. Use reduce() to return the product of elements of list numbers.
+
+
+Input Format
+
+Space separated values for integers
+Space separated values for names (string)
+Space separated values for numbers
+
+
+Output Format
+
+List of the squares of each number
+List with only those names that have less than or equal to seven letters.
+The product of elements of list numbers.
+
+
+Example Input
+
+4 6 3 9 2 8 12
+scaler interviewbit rishabh student course
+4 6 9 23 5
+
+
+Example Output
+
+[16, 36, 9, 81, 4, 64, 144]
+['scaler', 'rishabh', 'student', 'course']
+24840
+
+
+Example Explanation
+
+From the first list (integers), every number is squared and the resultant list [16, 36, 9, 81, 4, 64, 144] is returned. From the second list (names), only words with less than or equal to 7 characters are selected and added to the second resultant list, and ['scaler', 'rishabh', 'student', 'course'] is returned. From the last list (numbers), the product of all the numbers (24840) is returned.
+
+Solution:
+
+from functools import reduce 
+def func(integers, names, numbers):
+    '''
+    input:
+    integers -> list of integers to perform the square operation on
+    names -> list of names to filter out as per the condition
+    numbers -> list of numbers whose product we want
+    
+    output:
+    map_result -> output of integers list
+    filter_result -> output of the names lsit
+    reduce_result -> output of the numbers list
+    '''
+    map_result, filter_result, reduce_result = None, None, None
+    
+    # Your code stars here
+    map_result = list(map(lambda x: x**2,integers))
+    filter_result = list(filter(lambda x :len(x) <= 7,names))
+    reduce_result = reduce(lambda a,b:a * b,numbers)
+    
+    # Your code ends here
+    
+    return map_result, filter_result, reduce_result

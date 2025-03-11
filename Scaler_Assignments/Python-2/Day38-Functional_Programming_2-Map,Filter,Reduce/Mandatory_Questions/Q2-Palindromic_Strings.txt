@@ -1,0 +1,22 @@
+Q2. Palindromic Strings
+
+The following python function is written to filter the palindromes from the list of strings.
+
+
+def isPalindrome(my_list):
+
+  palindromes = __________
+
+  return palindromes
+
+Which of the following code snippets will fulfill the required operation?
+
+i) palindromes = list(filter(lambda word: word == word[::-1], my_list))
+
+ii) palindromes = list(filter(lambda word: word == word[-1], my_list))
+
+iii) palindromes = list(filter(word == word[::-1], my_list))
+
+iv) None of the Above
+
+Solution: i

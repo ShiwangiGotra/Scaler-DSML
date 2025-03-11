@@ -1,0 +1,23 @@
+Q1. salaries and job
+
+Fill in the _______ to get the required output (mentioned in the Code snippet).
+
+column_names = ['name', 'salary', 'job']
+db_rows = [('Alice', 180000, 'data scientist'),
+           ('Bob', 99000, 'data engineer'),
+           ('Frank', 87000, 'data analyst')]
+
+db = [dict(zip(__________)) for row in db_rows]
+print(db)
+
+Required Output: [{'name': 'Alice', 'salary': 180000, 'job': 'data scientist'}, {'name': 'Bob', 'salary': 99000, 'job': 'data engineer'}, {'name': 'Frank', 'salary': 87000, 'job': 'data analyst'}]
+
+i) column_names, row
+
+ii) columnnames, dbrows
+
+iii) row, column_names
+
+iv) dbrows, columnnames
+
+Solution: i

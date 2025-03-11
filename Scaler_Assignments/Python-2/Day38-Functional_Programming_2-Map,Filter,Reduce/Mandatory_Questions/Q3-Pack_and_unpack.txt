@@ -1,0 +1,19 @@
+Q3. Pack and unpack
+
+What will be the output of the following code snippet:
+
+list1 = [[1,2,3],[4,5,6],[7,8,9]]
+list2 = [[9,8,7],[6,5,4],[3,2,1]]
+ls11,ls12,ls13=list1
+ls21,ls22,ls23=list2
+print(list(zip(ls11,ls12,ls13,ls21,ls22,ls23)))
+
+i) [(1, 4, 7, 1, 2, 3), (2, 5, 8, 4, 5, 6), (3, 6, 9, 7, 8, 9)]
+
+ii) [(1, 4, 7, 9, 6, 3), (2, 5, 8, 8, 5, 2), (3, 6, 9, 7, 4, 1)]
+
+iii) [(1, 2, 3, 1, 2, 3), (4, 5, 6, 4, 5, 6), (7, 8, 9, 7, 8, 9)]
+
+iv) Error
+
+Solution: ii
