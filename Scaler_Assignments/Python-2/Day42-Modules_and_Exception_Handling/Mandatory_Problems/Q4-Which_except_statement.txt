@@ -1,0 +1,20 @@
+Q4. Which except statement
+
+Which of the except statement out of #1 and #2 will get executed in the following code snippet?
+
+try:
+  print(x)
+except NameError:                       #1
+  print("Variable x is not defined")
+except:                                 #2
+  print("Something else went wrong")
+
+i) 1
+
+ii) 2
+
+iii) None of 1 and 2
+
+iv) Both of 1 and 2
+
+Solution: i

@@ -1,0 +1,27 @@
+Q5. finally block
+
+What will statements #A and #B print?
+
+def even(x):
+  try:
+    if x%2==0:
+      return "even"
+    else:
+      raise Exception
+  except:
+    return("odd")
+  finally:
+    return "integer"
+
+print(even(5))    #A
+print(even(4))    #B
+
+i) A will print “integer”, B will print “even”
+
+ii) A will print “integer”, B will print “integer”
+
+iii) A will give "odd", B will print “even”
+
+iv) A will give "odd", B will print “integer”
+
+Solution: ii

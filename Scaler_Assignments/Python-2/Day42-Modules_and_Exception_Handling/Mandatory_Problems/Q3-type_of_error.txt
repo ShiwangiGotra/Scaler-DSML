@@ -1,0 +1,15 @@
+Q3. type of error
+
+Suppose func(file_name) is a function that takes a .txt file as an argument and prints the text in the file.
+
+Now, if the file goes missing from the referred location, then what kind of exception will be raised?
+
+i) ValueError
+
+ii) TypeError
+
+iii) ImportError
+
+iv) FileNotFoundError
+
+Solution: iv

@@ -1,0 +1,26 @@
+Q2. Except and finally
+
+Is the following way of using try, except, and finally valid? What's the reason behind your answer?
+
+try:
+  print(a)
+except ValueError:
+  a=3
+  print(a)
+except:
+  a=5
+  print(a)
+finally:
+  a=4
+  print(a)
+Choose the correct option.
+
+i) No, because try can't have multiple except statements
+
+ii) No, because finally cannot be used with except
+
+iii) Yes, because relative order of except and finally doesn't matter
+
+iv) Yes, because except should be used before finally
+
+Solution: iv
