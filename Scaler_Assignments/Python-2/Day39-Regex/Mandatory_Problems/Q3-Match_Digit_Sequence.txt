@@ -1,0 +1,13 @@
+Q3. Match Digit Sequence
+
+Which regex pattern in Python can be used to match any sequence of digits?
+
+i) \d+
+
+ii) \w*
+
+iii) [^0-9]
+
+iv) \D
+
+Solution: i

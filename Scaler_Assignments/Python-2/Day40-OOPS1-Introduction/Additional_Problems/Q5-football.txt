@@ -1,0 +1,28 @@
+Q5. football
+
+What is the output of the following code snippet?
+
+
+class football:
+    final_res= 'lose'
+    def __init__(self,name,score):
+        self.name = name
+        self.score = score
+        self.final_res = 'lose'
+    
+    def calc(self, winning_score):
+        if self.score>winning_score:
+            self.final_res='win'
+match = football('Juventus',3)
+match.calc(2)
+print(football.final_res, match.final_res)
+
+i) lose lose
+
+ii) win lose
+
+iii) lose win
+
+iv) win win
+
+Solution: iii

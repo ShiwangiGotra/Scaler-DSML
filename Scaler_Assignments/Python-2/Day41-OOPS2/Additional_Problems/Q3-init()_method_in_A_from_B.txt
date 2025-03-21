@@ -1,0 +1,13 @@
+Q3. init() method in A from B
+
+Suppose B is a subclass of A, to invoke the __init__ method of A from B, what is the line of code you should write?
+
+i) A.init(self)
+
+ii) B.init(self)
+
+iii) A.init(B)
+
+iv) B.init(A)
+
+Solution: i

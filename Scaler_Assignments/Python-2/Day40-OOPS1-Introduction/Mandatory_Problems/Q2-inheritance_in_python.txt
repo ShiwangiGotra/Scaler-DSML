@@ -1,0 +1,24 @@
+Q2. inheritance in python
+
+What will be the output of the following code block?
+
+class A:
+   def one(self):
+       return self.two()
+   def two(self):
+       return 'A'
+class B(A):
+   def two(self):
+       return 'B'
+obj= B()
+print(obj.one())
+
+i) B
+
+ii) A
+
+iii) AB
+
+iv) None
+
+Solution: i

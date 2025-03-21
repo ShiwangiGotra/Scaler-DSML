@@ -1,0 +1,31 @@
+Q3. Make noise
+
+What will be the output of the following code?
+
+class A:
+ def __init__(self, name, sound="Grrrr"):
+   self.name = name
+   self.sound = sound
+
+ def make_noise(self):
+   print("{} says, {}".format(self.name,self.sound))
+
+class B(A):
+ def __init__(self, name="Rachel"):
+   super().__init__(name, "Meow!")
+
+ def make_noise(self,sound="Grrrr!"):
+   print("{} says, {}".format(self.name, sound))
+
+pet_cat = B()
+pet_cat.make_noise()
+
+i) Rachel says, Grrrr!
+
+ii) Rachel says, Meow!
+
+iii) Error, Wrongly invoked constructor
+
+iv) Runs with no output
+
+Solution:  i

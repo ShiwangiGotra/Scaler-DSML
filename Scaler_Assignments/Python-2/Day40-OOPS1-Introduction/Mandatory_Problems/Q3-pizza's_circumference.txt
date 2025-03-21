@@ -1,0 +1,31 @@
+Q3. pizza's circumference
+
+Observe the following code snippet and select the correct option to get the circumference of pizza having radius of 6 cm.
+
+class Circle:
+    pi = 3.14
+    def __init__(self, diameter):
+        self.radius = diameter / 2
+
+    def circumference(self):
+        return 2 * self.pi * self.radius
+
+
+A) pizza = Circle(6)
+print(pizza.circumference())
+
+B) pizza = Circle(12)
+print(pizza.self.circumference())
+
+C) pizza = Circle(12)
+print(pizza.circumference())
+
+D) pizza = Circle(6)
+print(pizza.self.circumference())
+
+i) A
+ii) B
+iii) C
+iv) D
+
+Solution: C

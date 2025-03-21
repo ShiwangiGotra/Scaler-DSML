@@ -1,0 +1,67 @@
+Q2. Props Inheritance
+
+You are given a small code snippet from a game, BrickBreaker. The props.py is containing a class Props which has all the basic features common in every prop. You are also given a ball.py file containing the properties a ball should have in order to play the game.
+
+Props.py
+
+class Props:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+Ball.py
+
+class Ball(Props):
+    def __init__(self, x, y):
+        super().__init__(x, y)
+        self.shape = "o"
+        self.number = 1
+        self.vely = 0
+        self.velx = 0
+
+    def get_x(self):
+        return self.x
+ 
+    def get_y(self):
+       return self.y
+
+    def get_velx(self):
+       return self.velx
+ 
+    def get_vely(self):
+       return self.vely
+    
+    def inc_velx(self):
+       self.velx = self.velx+2
+    
+    def inc_vely(self):
+       self.vely = self.vely+1
+
+You need to find the output of the following code considering the given 2 files.
+
+obj_ball = Ball(27,3)
+
+bx = obj_ball.get_x()
+by = obj_ball.get_y()
+b_velx = obj_ball.get_velx()
+b_vely = obj_ball.get_vely()
+
+print(bx, by, b_velx, b_vely)
+Here,
+
+x and y are the coordinates of the prop
+shape is the character with which the ball is represented by
+number is the number of balls in the game
+velx is the velocity in x direction.
+vely is the velocity in y direction.
+
+Solution:
+
+i) 27 3 0 0
+
+ii) Error: x and y are not defined
+
+iii) 27 3 2 1
+
+iv) 0 0 0 0
+
+Solution: i

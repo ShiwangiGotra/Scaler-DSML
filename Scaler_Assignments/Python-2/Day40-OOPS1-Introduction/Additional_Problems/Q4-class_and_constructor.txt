@@ -1,0 +1,34 @@
+Q4. class and constructor
+
+Fill the blanks in the code snippet to get the given output?
+
+class Student:
+  # Class variable
+  subject_name = 'Math for Machine Learning'
+
+  # constructor
+  def __init__(self, name, roll_no):
+    self.name = name
+    self.roll_no = roll_no
+
+# outside the class
+# create Objects
+_____________________#blank1
+_____________________#blank2
+
+print(s1.name, s1.roll_no, s1.subject_name)
+Choose the correct option(s) for getting Emma 10 Machine Learning as the output if the blanks are replaced by statements given in the options.
+
+
+i) s1 = Student('Emma', 10), Student.subject_name = 'Machine Learning'
+
+
+ii) s1 = Student('Emma', 10), s1.subject_name = 'Machine Learning'
+
+
+iii) s1 = Student('Emma', 10), No change required
+
+
+iv) None of the above
+
+Solution: i and ii

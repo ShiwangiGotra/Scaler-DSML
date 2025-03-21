@@ -1,0 +1,29 @@
+Q4. add dunder
+
+Consider the following Python classes:
+
+class Base:
+    def __init__(self, value):
+        self.value = value
+
+    def __add__(self, other):
+        return self.value + other.value
+
+class Derived(Base):
+    def __add__(self, other):
+        return self.value * other.value
+
+a = Base(5)
+b = Derived(10)
+print(a + b)
+What is the output of the above code?
+
+i) 15
+
+ii) 50
+
+iii) Raises a TypeError
+
+iv) NotImplemented
+
+Solution: i

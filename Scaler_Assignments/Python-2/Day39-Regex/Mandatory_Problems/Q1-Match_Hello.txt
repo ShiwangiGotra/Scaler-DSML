@@ -1,0 +1,13 @@
+Q1. Match Hello
+
+How can you check if a string starts with the prefix "hello" using regex in Python?
+
+i) re.search("hello", string)
+
+ii) re.prefix("hello", string)
+
+iii) re.start("hello", string)
+
+iv) re.match("hello", string)
+
+Solution: iv

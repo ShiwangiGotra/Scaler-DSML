@@ -1,0 +1,25 @@
+Q3. dunder str
+
+Consider the following Python class:
+
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def __str__(self):
+        return f"Rectangle({self.width}, {self.height})"
+
+rect = Rectangle(3, 4)
+print(str(rect))
+What is the output of the above code?
+
+i) Rectangle object at 0x…
+
+ii) Rectangle(3, 4)
+
+iii) 3, 4
+
+iv) None
+
+Solution: ii

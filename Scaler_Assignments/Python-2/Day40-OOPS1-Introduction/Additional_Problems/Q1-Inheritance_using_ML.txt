@@ -1,0 +1,111 @@
+Q1. Inheritance using ML
+
+You are already given a class Machine_Learning with its constructor and a number of methods. You have to define a class Supervised which will inherit the MachineLearning class with the following data members and methods:
+
+
+Data Members:
+
+1. name: string
+2. category: string
+
+Methods:
+
+1. Constructor: Initialize the data member and call the parent class constructor
+2. getname(): Returns the data member name.
+3. getcategory(): Returns the data member breed.
+4. type(): Prints 'Supervised Learning Algorithm'.
+
+You also have to define a class Unsupervised which will also inherit the MachineLearning class with the same data members and methods as in Supervised, but the type() will have to print Unsupervised Learning Algorithm for this class.
+
+Input Format:
+
+4 strings each in a new line. First two strings are name and category for Supervised class object and the last two are for Unsupervised class object.
+Output Format:
+
+Name of class is printed for the two instantiated objects.
+Category of class is printed for the two instantiated objects.
+type() of class is printed for the two instantiated objects.
+
+Sample Input:
+
+Logistic Regression
+Classification Algo
+k-Means
+Clustering Algo
+Sample output:
+
+Name: Logistic Regression
+Category: Classification Algo
+Supervised Learning Algorithm
+Name: k-Means
+Category: Clustering Algo
+Unsupervised Learning Algorithm
+Sample's Explanation:
+
+For Linear Regression, Classification Algo the type of class is supervised therefore it's printed after its name and category. For k-Means, Clustering Algo the type of class is supervised therefore it's printed after its name and category.
+
+Solution:
+
+class MachineLearning:
+    def __init__(self,name,category):
+        self.name=name
+        self.category=category
+        
+    def getname(self):
+        return self.name
+        
+    def getcategory(self):
+        return self.category
+        
+    def print(self):
+        print("Name:",self.name)
+        print("Category:",self.category)
+
+class Supervised(MachineLearning):
+    def __init__(self,name,category):
+        #YOUR CODE GOES HERE
+        super().__init__(name,category)
+        self.name = name
+        self.category = category
+
+    def getname(self):
+        print(f'Name: {self.name}')
+
+    def getcategory(self):
+        print(f'Category: {self.category}')
+    
+    def type(self):
+        #YOUR CODE GOES HERE
+        self.getname()
+        self.getcategory()
+        print('Supervised Learning Algorithm')
+
+class Unsupervised(MachineLearning):
+    def __init__(self,name,category):
+        super().__init__(name,category)
+
+    def getname(self):
+        print(f'Name: {self.name}')
+
+    def getcategory(self):
+        print(f'Category: {self.category}')
+    
+    def type(self):
+        #YOUR CODE GOES HERE
+        self.getname()
+        self.getcategory()
+        print('Unsupervised Learning Algorithm')
+
+def mlAnalogy(a,b,c,d):
+    '''
+    input=> a,b = name and category for Supervised class
+            c,d = name and category for Unsupervised class
+    output=> type() is called for both classes in the end, it should first print the Name and Category then the type of class in new lines
+    '''
+
+    obj1=Supervised(a,b)
+    obj1.type()
+    obj2=Unsupervised(c,d)
+    obj2.type()
+
+    return None

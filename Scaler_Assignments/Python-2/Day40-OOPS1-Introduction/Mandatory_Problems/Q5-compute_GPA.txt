@@ -1,0 +1,91 @@
+Q5. compute GPA
+
+Problem Description
+Create a class Student and initialize it with the following class variables:
+
+
+marks in subject 1
+credit of subject 1
+marks in subject 2
+credit of subject 2
+
+Create a function gradepointaverage() for the Student class which computes the GPA rounded to two decimals, based on the following criteria of points in a subject :
+
+1. If marks>=90:10 points
+2. If 90>marks>=75: 9 points
+3. If 75>marks>=60: 8 points
+4. If 60>marks>=45: 7 points
+5. If marks<45: 0 points
+
+
+
+GPA =  
+creditofsubject1+creditofsubject2
+(pointsinsubject1∗creditofsubject1+pointsinsubject2∗creditofsubject2)
+​
+ 
+
+The points in a subject should be calculated according to the criteria mentioned in the question.
+Also, implement a special zero case to handle when credits of both subjects are 0, return "-1.0".
+
+Input Format
+
+Class Student takes input in the form (marks1,marks2,credits1,credits2)
+
+
+Output Format
+
+GPA value
+
+
+Example Input
+
+(85, 76, 3, 4)
+
+
+Example Output
+
+9.0
+
+
+
+Note: The Math.round() method in Java is used to round a floating-point or double-precision number to the nearest integer value. It performs standard rounding, where values with a fractional part less than 0.5 are rounded down, and values with a fractional part greater than or equal to 0.5 are rounded up.
+
+Math.round(65.752) -> 66
+Math.round(65.467) -> 65
+
+Can you use this to return the output in required format from the gradepointaverage() function?
+
+Solution:
+
+class Student():
+    
+    def __init__(self, marks1,marks2,credits1, credits2):
+        #YOUR CODE GOES HERE
+        self.marks1 = marks1
+        self.marks2 = marks2
+        self.credits1 = credits1
+        self.credits2 = credits2 
+    
+    def credits(self,marks):
+        if marks >= 90:
+            return 10
+        elif 90 > marks >= 75:
+            return 9
+        elif 75 > marks >= 60:
+            return 8
+        elif 60 < marks >= 45:
+            return 7
+        else:
+            return 0
+    
+    def grade_point_average(self):
+        gpa=0
+        
+        #YOUR CODE GOES HERE
+        if self.credits1 != 0 and self.credits2 != 0:
+            gpa = ((self.credits1 * self.credits(self.marks1)) + (self.credits2 * self.credits(self.marks2)))/(self.credits1 + self.credits2)
+    
+            return round(gpa,2)
+        else:
+            return -1.0

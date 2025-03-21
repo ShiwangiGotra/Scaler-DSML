@@ -1,0 +1,14 @@
+Q3. Regex result
+
+Given the following regex pattern x = '(\d+)\s(?:apples|mangoes), what will be the result of re.findall(x, '7 apples and 4 mangoes')??
+
+i) [('7', 'apples'), ('4', 'mangoes')]
+
+ii) [('7 apples'), ('4 mangoes')]
+
+iii) ['7 apples and', '4 mangoes']
+
+iv) ['7', '4']
+
+Solution: iv
+

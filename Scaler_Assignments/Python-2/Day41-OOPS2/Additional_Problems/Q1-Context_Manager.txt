@@ -1,0 +1,30 @@
+Q1. Context Manager
+
+Examine the following code involving a context manager:
+
+class ManagedFile:
+    def __init__(self, filename):
+        self.filename = filename
+
+    def __enter__(self):
+        self.file = open(self.filename, 'w')
+        return self.file
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        if self.file:
+            self.file.close()
+
+with ManagedFile('test.txt') as f:
+    f.write('Hello, World!')
+    raise ValueError("An error occurred")
+What happens when this code is executed?
+
+i) The file test.txt is written with "Hello, World!" and remains open.
+
+ii) The file test.txt is written with "Hello, World!" and is properly closed despite the raised exception.
+
+iii) The file test.txt is not created because an exception is raised.
+
+iv) A ValueError is raised, and the file remains open.
+
+Solution: ii

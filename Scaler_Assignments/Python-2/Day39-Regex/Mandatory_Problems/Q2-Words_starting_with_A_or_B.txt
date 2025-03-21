@@ -1,0 +1,14 @@
+Q2. Words starting with A or B
+
+How can you extract all the words that start with the letter 'A' or 'B' from a given string using regex in Python?
+
+
+A. \b[A-B]\w+\b
+
+B. \b[A|B]\w+\b
+
+C.  ^[AB]\w+$
+
+D.  \b[A,B]\w+\b
+
+Solution: A

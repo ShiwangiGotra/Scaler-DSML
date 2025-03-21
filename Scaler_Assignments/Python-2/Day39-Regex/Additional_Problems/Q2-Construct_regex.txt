@@ -1,0 +1,17 @@
+Q2. Construct regex
+
+Which of the following regex pattern can be used to validate a strong password in Python. A strong password must meet the following criteria:
+
+At least 8 characters long
+Contains at least one uppercase letter, one lowercase letter, one digit, and one special character from the set: !@#$%^&*()-_=+[]{}|;:'",.<>?/
+
+A. ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()-_=+[\]{}|;:'",.<>?/]).{8,}$
+
+B. ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$
+
+C. ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()-_=+[\]{}|;:'",.<>?/]).$
+
+D. ^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z\d]).{8,}$
+
+Solution: A
+

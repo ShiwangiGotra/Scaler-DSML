@@ -1,0 +1,39 @@
+Q1. parent and child
+
+Fill in the blank space in the code snippet to get an output of 60?
+
+class Parent:
+  def __init__(self):
+    pass
+  def print(self):
+    print("60")
+
+class Child(Parent):
+   ____________
+   ____________ # This block has to be completed.
+
+C=Child()
+C.type()
+
+*******Choose from below options*******
+#A. 
+def __init__(self):
+  super().__init__()
+def type(self):
+  self.print()
+
+#B.
+def __init__(self):
+  super().__init__()
+def type(self):
+  self().print()
+
+#C.
+def __init__(self):
+  super().__init__()
+def type(self):
+  super().print()
+#D.
+None of these
+
+Solution: A and C

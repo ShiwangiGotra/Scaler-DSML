@@ -1,0 +1,13 @@
+Q6. init() method
+
+Choose the correct statements about the __init__() method.
+
+i) It is called automatically, while creating objects.
+
+ii) It is used to initialize values of data members.
+
+iii) It is a magic method.
+
+iv) All of these
+
+Solution: iv

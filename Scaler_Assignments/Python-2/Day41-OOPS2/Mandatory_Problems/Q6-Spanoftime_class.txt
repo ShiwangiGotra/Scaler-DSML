@@ -1,0 +1,66 @@
+Q6. Spanoftime class
+
+Complete the timeHandle() function by completing the Spanoftime class. Spanoftime class should fulfill the following two requirements:
+
+1. Complete the method addTime which should take two Spanoftime objects, add them and return another Spanoftime object with added attributes (Hours and minutes). E.g.- (2 hour and 50 min)+(1 hr and 20 min) is (4 hr and 10 min)
+
+2. Complete the method returnMinute which should return total minutes in the Spanoftime objects t1 and t2. E.g.- (1 hr 2 min and 1 hr 2 min) should return 124 minute.
+
+timeHandle() has 4 parameters which are hours and minutes for two Spanoftime objects which are instantiated in the function itself.
+
+Input Format:
+
+There will be four lines of input for each test case. First two lines will have the hours and minutes for t1, similarly the later two lines will have hours and minutes for t2.
+Output format:
+
+For each testcase both the methods returned variables will be used. The output format for addTime will be x hours and y min. The output format for returnMinutes will be=> The total minutes in Spanoftime t1 and t2 are: x*60 + y
+Sample input:
+
+1
+10
+0
+50
+Sample output:
+
+2 hours and 0 min 
+The total minutes in Spanoftime t1 and t2 are: 120
+Sample's explanation:
+
+The added Spanoftime object will have 2 hours and 0 mins. The total number of minutes will be 1*60 + 10 + 0*60 + 50 = 120
+
+Solution:
+
+def timeHandle(a,b,c,d):
+    '''inputs: a,b = hours and mins of t1
+               c,d = hours and mins of t2
+        Output: Two lines of output for each pair of t1 and t2. The code for printing outputs is already just make sure to return in the methods.'''
+    # The code for taking input and printing output is already taken care of.
+
+    class Spanoftime:
+        def __init__(self,h,m):
+            self.hours=h
+            self.mins=m
+            
+        def displayTime(self):
+            return ("{} hours and {} min".format(self.hours,self.mins))
+        
+        def addTime(t1,t2):
+            t3=Spanoftime(0,0)
+            # Complete the function
+            total_minutes = t1.mins + t2.mins
+            t3.mins = total_minutes % 60
+            carry_hours = total_minutes // 60
+            t3.hours = t1.hours + t2.hours + carry_hours
+            return t3
+            
+        def returnMinutes(t1,t2):
+            # Return the total number of minutes
+            total_minutes = t1.hours * 60 + t2.hours * 60 + t1.mins + t2.mins 
+            return total_minutes
+        
+    t1=Spanoftime(a,b)
+    t2=Spanoftime(c,d)
+    t3=Spanoftime.addTime(t1,t2)
+    t3.displayTime()
+    totalmin=str(Spanoftime.returnMinutes(t1,t2))
+    return t3.displayTime(),("The total minutes in time t1 and t2 are: " + totalmin)

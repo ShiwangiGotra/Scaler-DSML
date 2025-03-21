@@ -1,0 +1,20 @@
+Q5. self in Person class
+
+class Person:
+  def __init__(self, Name):
+    self.name = Name             #line x
+  def get_person_name(self):
+    return self.name
+p1=Person("Vishal")
+
+When name "Vishal" is assigned to object p1 of the Person class in the above code snippet, what did self refer to, in line x?
+
+i) p1 object
+
+ii) Person class
+
+iii) name variable
+
+iv) init method
+
+Solution: i

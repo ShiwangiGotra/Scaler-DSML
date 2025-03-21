@@ -1,0 +1,24 @@
+Q5. Print name
+
+What will be the output of the following code snippet:
+
+class People():
+    def __init__(self, name):
+        self.name = name
+
+    def get_name(self):
+        print(self.name)
+
+person1 = People("John")
+person2 = People("Mary")
+person1.get_name()
+
+i) John
+
+ii) Mary
+
+iii) Johny Mary
+
+iv) Error
+
+Solution: i
