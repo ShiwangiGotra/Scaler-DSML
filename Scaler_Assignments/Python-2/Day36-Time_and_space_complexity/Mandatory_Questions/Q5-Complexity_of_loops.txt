@@ -1,0 +1,23 @@
+Q5. Complexity of loops
+
+What is the Big O space complexity of the following piece of code in the terms of n (size of arr)?
+
+def function(arr):
+    n = len(arr)
+    hash = [[0 for _ in range(n)] for _ in range(n)]
+    for i in range(n):
+        for j in range(n):
+            hash[i][j] = arr[i]*2
+    return sum([sum(i) for i in hash])
+
+function([1,2,3,4,5])
+
+i) n
+
+ii) n^3
+
+iii) n^2
+
+iv) log(n)
+
+Solution: iii

@@ -1,0 +1,18 @@
+Q4. Nested For Loops
+
+For the code given below, what would be the time complexity?
+
+for i in range(1, n):
+    for j in range(1, n//4):
+        for k in range(1, n):
+            break
+
+i) O(n)
+
+ii) O(n³)
+
+iii) O(n²)
+
+iv) O(n² log n)
+
+Solution: iii
